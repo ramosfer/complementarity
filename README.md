@@ -7,4 +7,6 @@ The data includes maximum xy ranges for the maps of the core ranges, and for eac
 
 Uncompress the data.zip file before running the scripts and place it in the same direectory as the R or Python files.
 
-If you use this script for academic research, please cite the paper mentioned above.
+If you use this script for academic research, please cite 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15292113.svg)](https://doi.org/10.5281/zenodo.15292113)
