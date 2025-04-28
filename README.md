@@ -7,7 +7,7 @@ The Python script, written as a Jupyter interactive notebook, uses the computed 
 
 The data includes maximum xy ranges for the maps of the core ranges, and for each season and year combination: the individual core ranges and their intersections, the index of fruit abundance, the filtration complementarity index, which serve as input for the R code, and the w value, area and composition each simplex, as well as the composition in terms of age, sex and immigration status of each simplex, which serve as the input for the Python code. 
 
-Uncompress the data.zip file before running the scripts and place it in the same direectory as the R or Python files.
+Uncompress the data.zip file before running the scripts and place it in the same directory as the R or Python files.
 
 If you use this script for academic research, please cite 
 
