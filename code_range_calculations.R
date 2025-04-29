@@ -3,7 +3,8 @@
 # "Uncovering complementary information sharing in spider monkey 
 # collective foraging using higher-order spatial networks"
 # by Ramos-Fernandez, Walker, Silk, Boyer and Smith Aguilar
-# April 2025
+# 27th April 2025
+# Code prepared by Gabriel Ramos-Fernandez, gabriel@aries.iimas.unam.mx
 
 # Load relevant libraries
 library(spatstat)
@@ -18,7 +19,7 @@ library(ridgeline)
 
 # dry 2012 loop
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2012_DRY/CA")
+setwd("%[  insert local directory here ]/individuals/2012_DRY/CA")
 list.indiv.d12 <- list.files(pattern="*.shp") 
 indivs.d12.shps <- lapply(list.indiv.d12, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -47,7 +48,7 @@ for(i in 1:length(d12.list)){
 
 # wet 2012 loop
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2012_WET/CA")
+setwd("%[  insert local directory here ]/individuals/2012_WET/CA")
 list.indiv.w12 <- list.files(pattern="*.shp") 
 indivs.w12.shps <- lapply(list.indiv.w12, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -75,7 +76,7 @@ for(i in 1:length(w12.list)){
 # dry 2013 loop
 
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2013_DRY/CA")
+setwd("%[  insert local directory here ]/individuals/2013_DRY/CA")
 list.indiv.d13 <- list.files(pattern="*.shp") 
 indivs.d13.shps <- lapply(list.indiv.d13, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -102,7 +103,7 @@ for(i in 1:length(d13.list)){
 
 # wet 2013 loop
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2013_WET/CA")
+setwd("%[  insert local directory here ]/individuals/2013_WET/CA")
 list.indiv.w13 <- list.files(pattern="*.shp") 
 indivs.w13.shps <- lapply(list.indiv.w13, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -128,7 +129,7 @@ for(i in 1:length(w13.list)){
 
 # dry 2014 loop
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2014_DRY/CA")
+setwd("%[  insert local directory here ]/individuals/2014_DRY/CA")
 list.indiv.d14 <- list.files(pattern="*.shp") 
 indivs.d14.shps <- lapply(list.indiv.d14, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -155,7 +156,7 @@ for(i in 1:length(d14.list)){
 
 # wet 2014 loop
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2014_WET/CA")
+setwd("%[  insert local directory here ]/individuals/2014_WET/CA")
 list.indiv.w14 <- list.files(pattern="*.shp") 
 indivs.w14.shps <- lapply(list.indiv.w14, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -181,7 +182,7 @@ for(i in 1:length(w14.list)){
 
 # dry 2015 loop
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2015_DRY/CA")
+setwd("%[  insert local directory here ]/individuals/2015_DRY/CA")
 list.indiv.d15 <- list.files(pattern="*.shp") 
 indivs.d15.shps <- lapply(list.indiv.d15, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -208,7 +209,7 @@ for(i in 1:length(d15.list)){
 
 # wet 2015 loop
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2015_WET/CA")
+setwd("%[  insert local directory here ]/individuals/2015_WET/CA")
 list.indiv.w15 <- list.files(pattern="*.shp") 
 indivs.w15.shps <- lapply(list.indiv.w15, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -235,7 +236,7 @@ for(i in 1:length(w15.list)){
 
 # dry 2016 loop
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2016_DRY/CA")
+setwd("%[  insert local directory here ]/individuals/2016_DRY/CA")
 list.indiv.d16 <- list.files(pattern="*.shp") 
 indivs.d16.shps <- lapply(list.indiv.d16, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -262,7 +263,7 @@ for(i in 1:length(d16.list)){
 
 # wet 2016 loop
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2016_WET/CA")
+setwd("%[  insert local directory here ]/individuals/2016_WET/CA")
 list.indiv.w16 <- list.files(pattern="*.shp") 
 indivs.w16.shps <- lapply(list.indiv.w16, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -288,7 +289,7 @@ for(i in 1:length(w16.list)){
 
 # dry 2017 loop
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2017_DRY/CA")
+setwd("%[  insert local directory here ]/individuals/2017_DRY/CA")
 list.indiv.d17 <- list.files(pattern="*.shp") 
 indivs.d17.shps <- lapply(list.indiv.d17, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -315,7 +316,7 @@ for(i in 1:length(d17.list)){
 
 # wet 2017 loop
 # read shapefiles from their directory, one for each season/year combination
-setwd("~%set local path here%/data and code/INDIVIDUALES/TEMPORADAS/2017_WET/CA")
+setwd("%[  insert local directory here ]/individuals/2017_WET/CA")
 list.indiv.w17 <- list.files(pattern="*.shp") 
 indivs.w17.shps <- lapply(list.indiv.w17, read_sf)
 # convert the individual polygons to owin objects, and cut the smoothed surface above with each one, checking by plotting that this is correct
@@ -416,19 +417,20 @@ colnames(core.areas) <- c("indiv", "area", "year", "season")
 
 ###### Extract intersections from shapefiles #####
 
-setwd("~%set local path here%/data and code/")
-i.d12.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2012_DRY")
-i.w12.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2012_WET")
-i.d13.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2013_DRY")
-i.w13.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2013_WET")
-i.d14.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2014_DRY")
-i.w14.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2014_WET")
-i.d15.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2015_DRY")
-i.w15.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2015_WET")
-i.d16.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2016_DRY")
-i.w16.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2016_WET")
-i.d17.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2017_DRY")
-i.w17.shp <- read_sf(dsn = "INTERSECTIONS", layer = "2017_WET")
+# go back to original direectory
+setwd("%[  insert local directory here ]")
+i.d12.shp <- read_sf(dsn = "intersections", layer = "2012_DRY")
+i.w12.shp <- read_sf(dsn = "intersections", layer = "2012_WET")
+i.d13.shp <- read_sf(dsn = "intersections", layer = "2013_DRY")
+i.w13.shp <- read_sf(dsn = "intersections", layer = "2013_WET")
+i.d14.shp <- read_sf(dsn = "intersections", layer = "2014_DRY")
+i.w14.shp <- read_sf(dsn = "intersections", layer = "2014_WET")
+i.d15.shp <- read_sf(dsn = "intersections", layer = "2015_DRY")
+i.w15.shp <- read_sf(dsn = "intersections", layer = "2015_WET")
+i.d16.shp <- read_sf(dsn = "intersections", layer = "2016_DRY")
+i.w16.shp <- read_sf(dsn = "intersections", layer = "2016_WET")
+i.d17.shp <- read_sf(dsn = "intersections", layer = "2017_DRY")
+i.w17.shp <- read_sf(dsn = "intersections", layer = "2017_WET")
 
 p.d12 <- list()
 a.d12 <- array()
@@ -618,7 +620,6 @@ for (i in 1:nrow(i.w17.shp)){
   # use those character vectors to calculate intersections and unions using the owin objects, and calculate their ratio
   a.w17[i] <- area(intersect.owin(as.solist(w17.list[grep(paste(p.w17[[i]], collapse="|"), names(w17.list))])))
   w.w17[i] <- 
-    #these two work!!!
     area(intersect.owin(as.solist(w17.list[grep(paste(p.w17[[i]], collapse="|"), names(w17.list))]))) /
     area(union.owin(as.solist(w17.list[grep(paste(p.w17[[i]], collapse="|"), names(w17.list))])))
 }
@@ -680,7 +681,7 @@ n.d17 <- lapply(p.d17, length)
 n.w17 <- lapply(p.w17, length)
 
 ## Read file with ranges for the bounding box: important for scale
-l.xyrange <- read.csv("%set local path here%/data and code/largest_xyranges.csv")
+l.xyrange <- read.csv("largest_xyranges.csv")
 l.xrange <- l.xyrange$l.xrange
 l.yrange <- l.xyrange$l.yrange
 
@@ -827,7 +828,7 @@ w.n[6] <- max(lengths(p.w17))
 
 
 ## Read data on fruit abundance
-ifa <- read.csv("%set local path here%/data and code/SEASONAL_IFA.CSV")
+ifa <- read.csv("seasonal_IFA.csv")
 ifa$year <- substr(ifa$k, 1, 4)
 ifa$season <- tolower(substr(ifa$k, 6, 8))
 ifa <- ifa[6:17,]
@@ -835,17 +836,9 @@ ifa <- ifa[6:17,]
 plot(ifa$mean_ifa_dbh_den/max(ifa$mean_ifa_dbh_den), ylim=c(0,1), xlab="", ylab="Index of fruit abundance", xaxt="n", type="l", lty=1, pch=19)
 axis(1, at = 1:length(levels(as.factor(ifa$k))), las = 2, xlab="", labels = levels(as.factor(ifa$k)))
 
-# Merge based on two common columns
-core.areas.ifa <- merge(core.areas, ifa, by = c("year", "season"))
-
-plot(core.areas.ifa$cv_ifa_dbh_den, core.areas$area)
-model4 <- glm(area   ~  mean_ifa_dbh_den + 1/indiv, data=core.areas.ifa)
-summary(model4)
-
-boxplot(core.areas.ifa$cv_ifa_dbh_den    ~  core.areas.ifa$season)
 
 ## Read data on filtration complementarity index
-cm <- read.csv("%set local path here%/data and code/complexity_scaling_only_CCs.csv")
+cm <- read.csv("complementarity_scaling_only_CCs.csv")
 cm$season <- rep(c("dry","wet"),6)
 cm$year <- c("2012", "2012", "2013", "2013", "2014", "2014", "2015", "2015", "2016", "2016", "2017", "2017")
 cm$mean.ifa <- ifa$mean_ifa_dbh_den
@@ -862,5 +855,5 @@ plot(cm$cv.ifa, cm$Weighted.index..only.CCs.scaled, col=c(col.dry, col.wet),
      cex=1.5, pch=19, xlab="Variation in fruit abundance index", 
      ylab="Filtration complementarity index")
 lmodel1 <- lm(cm$Weighted.index..only.CCs.scaled ~ cm$cv.ifa)
-summary(lmodel)
+summary(lmodel1)
 abline(a=coef(lmodel1)[1], b=coef(lmodel1)[2], lty=2)
