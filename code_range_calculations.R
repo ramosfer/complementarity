@@ -12,7 +12,7 @@ library(sf)
 library(maptools)
 library(ridgeline)
 
-## set local directory as %set local path here%/data and code and place all 
+## set local directory in "%[  insert local directory here ]" and place all 
 ## supplied data files there
 
 ##### CORE RANGES #####
